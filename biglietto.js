@@ -4,6 +4,14 @@ const element = document.getElementById("message");
 const costoPerKm = 0.21;
 let message = "";
 
+let el = document.querySelector("#message");
+let btn = document.querySelector("#mioBottone");
+
+btn.addEventListener("click", function() {
+    
+    
+});
+
 // Se età e distanza sono numerici
 if( Number.isFinite(eta) && Number.isFinite(distanza) ) {
     
@@ -27,7 +35,12 @@ if( Number.isFinite(eta) && Number.isFinite(distanza) ) {
 
 // In caso di errori relativi ai dati inseriti
 } else {
-    message = "Errore: i dati inseriti non sono numerici";
+    message = "Errore: i dati inseriti non sono corretti";
 }
 
 element.innerHTML = message;
+
+
+
+
+
