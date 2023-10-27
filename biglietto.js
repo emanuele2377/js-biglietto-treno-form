@@ -1,18 +1,12 @@
-const eta = parseInt( prompt("Inserire l'età del viaggiatore") );
-const distanza = parseInt( prompt("Inserire la distanza del viaggio in km") );
+let eta =("Inserire l'età del viaggiatore");
+let distanza =("Inserire la distanza del viaggio in km");
 const element = document.getElementById("message");
 const costoPerKm = 0.21;
 let message = "";
-
-let el = document.querySelector("#message");
-let btn = document.querySelector("#mioBottone");
-
-btn.addEventListener("click", function() {
-    
-    
-});
-
-// Se età e distanza sono numerici
+const btn = document.getElementById("myBtn");
+element.addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+  // Se età e distanza sono numerici
 if( Number.isFinite(eta) && Number.isFinite(distanza) ) {
     
     // Calcola costo iniziale
@@ -41,6 +35,7 @@ if( Number.isFinite(eta) && Number.isFinite(distanza) ) {
 element.innerHTML = message;
 
 
+});
 
 
 

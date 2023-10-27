@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biglietto treno</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <div class="formBottom">
-        
-        <form action="/action_page.php" method="get"></form>
-        <label for="fname">Nome e  Cognome</label>
-        <input type="text" id="mioBottone" name="eta"><br><br>
-        <label for="lname">Km da percorrere</label>
-        <input type="text" id="mioBottone" name="distanza"><br><br>
-        <label for="fname">Fascia d eta</label>
-        <input type="text" id="mioBottone" name="costoPerKm"><br><br>
-        <button d="mioBottone">Genera</button>
-        <button type="reset" value="Reset">Annulla</button>
-    </form>
-    
-</div>
 
     <h1>Il costo del biglietto e </h1>
     <p id="message"></p>
-    <p id="datiPassegero"</p>
+    <p id="demo"></p>
 
-    
-    <script src="biglietto.js"></script>
+<div>
+    <label for="fname">Nome e Cognome</label>
+    <input type="text" id="mioBottone" name="eta"><br><br>
+    <label for="lname">Km da percorrere</label>
+    <input type="text" id="mioBottone" name="distanza"><br><br>
+    <label for="fname">Fascia d eta</label>
+    <input type="text" id="mioBottone" name="costoPerKm"><br><br>
+    <button type="button" value="button" id="myBtn">Genera</button>
+    <button type="reset" value="reset" id="myBtn">Annulla</button>
+</div>
+
+
+
+        <script src="biglietto.js"></script>
 </body>
+
 </html>
